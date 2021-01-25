@@ -55,12 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ExtendedResourceSample.xaml.cs">
+      <DependentUpon>ExtendedResourceSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ResourceSample.xaml.cs">
       <DependentUpon>ResourceSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="SpeechFileToText\SpeechFileToText.xaml.cs">
       <DependentUpon>SpeechFileToText.xaml</DependentUpon>
     </Compile>
+    <Page Include="ExtendedResourceSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
