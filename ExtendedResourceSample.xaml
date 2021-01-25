@@ -22,7 +22,7 @@
         </LinearGradientBrush>
     </Window.Resources>
     <StackPanel Margin="10">
-        <Label Content="{StaticResource ComboBoxTitle}"/>
+        <Label Content="{StaticResource GlobalComboBoxTitle}"/>
         <ComboBox ItemsSource="{StaticResource ComboBoxItems}"/>
     </StackPanel>
 </Window>
