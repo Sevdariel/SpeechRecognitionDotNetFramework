@@ -61,6 +61,9 @@
     <Compile Include="ResourceSample.xaml.cs">
       <DependentUpon>ResourceSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ResourcesFromCodeBehindSample.xaml.cs">
+      <DependentUpon>ResourcesFromCodeBehindSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SpeechFileToText\SpeechFileToText.xaml.cs">
       <DependentUpon>SpeechFileToText.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ResourceSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourcesFromCodeBehindSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
