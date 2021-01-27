@@ -4,8 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="TextBlock" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="TextBlock" Height="200" Width="250">
+    <StackPanel>
+        <TextBlock Margin="10" Foreground="Red">
+            This is a TextBlock control<LineBreak/>
+            with multiple lines of text.
+        </TextBlock>
+        <TextBlock Margin="10" TextTrimming="CharacterEllipsis" Foreground="Green">
+            This is a TextBlock control with text that may not be rendered completely, which will be indicated with an ellipsis.            
+        </TextBlock>
+        <TextBlock Margin="10" TextWrapping="Wrap" Foreground="Blue">
+            This is a TextBlock control with automatically wrapped text, using the TextWrapping property.
+        </TextBlock>
+    </StackPanel>
 </Window>
