@@ -1,0 +1,17 @@
+﻿<Window x:Class="SpeechRecognition.Kontrolki.TextBoxSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="TextBox" Height="150" Width="300">
+    <StackPanel>
+        <Grid>
+            <TextBox AcceptsReturn="True" TextWrapping="Wrap" SpellCheck.IsEnabled="True" Language="pl-PL"/>
+        </Grid>
+        <DockPanel Margin="10">
+            <TextBox SelectionChanged="TextBox_SelectionChanged" DockPanel.Dock="Top"/>
+            <TextBox Name="txtStatus" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True"/>
+        </DockPanel>
+    </StackPanel>
+</Window>
