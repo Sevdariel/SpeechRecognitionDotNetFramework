@@ -55,37 +55,40 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ApplicationCultureSwitchSample.xaml.cs">
+    <Compile Include="FirstSteps\ApplicationCultureSwitchSample.xaml.cs">
       <DependentUpon>ApplicationCultureSwitchSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ExceptionHandlingSample.xaml.cs">
+    <Compile Include="FirstSteps\ExceptionHandlingSample.xaml.cs">
       <DependentUpon>ExceptionHandlingSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ExtendedResourceSample.xaml.cs">
+    <Compile Include="FirstSteps\ExtendedResourceSample.xaml.cs">
       <DependentUpon>ExtendedResourceSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ResourceSample.xaml.cs">
+    <Compile Include="FirstSteps\ResourceSample.xaml.cs">
       <DependentUpon>ResourceSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ResourcesFromCodeBehindSample.xaml.cs">
+    <Compile Include="FirstSteps\ResourcesFromCodeBehindSample.xaml.cs">
       <DependentUpon>ResourcesFromCodeBehindSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrolki\TextBlock.xaml.cs">
+      <DependentUpon>TextBlock.xaml</DependentUpon>
     </Compile>
     <Compile Include="SpeechFileToText\SpeechFileToText.xaml.cs">
       <DependentUpon>SpeechFileToText.xaml</DependentUpon>
     </Compile>
-    <Page Include="ApplicationCultureSwitchSample.xaml">
+    <Page Include="FirstSteps\ApplicationCultureSwitchSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ExceptionHandlingSample.xaml">
+    <Page Include="FirstSteps\ExceptionHandlingSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ExtendedResourceSample.xaml">
+    <Page Include="FirstSteps\ExtendedResourceSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="FirstSteps\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -93,15 +96,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="FirstSteps\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ResourceSample.xaml">
+    <Page Include="FirstSteps\ResourceSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ResourcesFromCodeBehindSample.xaml">
+    <Page Include="FirstSteps\ResourcesFromCodeBehindSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kontrolki\TextBlock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
