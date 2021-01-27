@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ApplicationCultureSwitchSample.xaml.cs">
+      <DependentUpon>ApplicationCultureSwitchSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExceptionHandlingSample.xaml.cs">
       <DependentUpon>ExceptionHandlingSample.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
     <Compile Include="SpeechFileToText\SpeechFileToText.xaml.cs">
       <DependentUpon>SpeechFileToText.xaml</DependentUpon>
     </Compile>
+    <Page Include="ApplicationCultureSwitchSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ExceptionHandlingSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
