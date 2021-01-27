@@ -11,15 +11,8 @@ namespace SpeechRecognition
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            MainWindow wnd = new MainWindow();
-            ResourceSample rsw = new ResourceSample();
-            ExtendedResourceSample ersw = new ExtendedResourceSample();
-            ResourcesFromCodeBehindSample rfcbsw = new ResourcesFromCodeBehindSample();
-            if (e.Args.Length == 1)
-                MessageBox.Show("Now opening file: \n\n" + e.Args[0]);
-            //rsw.Show();
-            //ersw.Show();
-            rfcbsw.Show();
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
         }
 
         private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
