@@ -70,6 +70,9 @@
     <Compile Include="FirstSteps\ResourcesFromCodeBehindSample.xaml.cs">
       <DependentUpon>ResourcesFromCodeBehindSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kontrolki\LabelControlSample.xaml.cs">
+      <DependentUpon>LabelControlSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kontrolki\TextBlock.xaml.cs">
       <DependentUpon>TextBlock.xaml</DependentUpon>
     </Compile>
@@ -108,6 +111,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FirstSteps\ResourcesFromCodeBehindSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kontrolki\LabelControlSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

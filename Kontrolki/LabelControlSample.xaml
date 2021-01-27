@@ -1,0 +1,28 @@
+﻿<Window x:Class="SpeechRecognition.Kontrolki.LabelControlSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="LabelControlSample" Height="250" Width="250">
+    <StackPanel Margin="10">
+        <Label Content="_Name:" Target="{Binding ElementName=txtName}" />
+        <TextBox Name="txtName" />
+        <Label Content="_Mail:" Target="{Binding ElementName=txtMail}" />
+        <TextBox Name="txtMail" />
+        <Label Target="{Binding ElementName=txtNazwa}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png" />
+                <AccessText Text="N_azwa:" />
+            </StackPanel>
+        </Label>
+        <TextBox Name="txtNazwa" />
+        <Label Target="{Binding ElementName=txtEMail}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_blue.png" />
+                <AccessText Text="Ma_il:" />
+            </StackPanel>
+        </Label>
+        <TextBox Name="txtEMail" />
+    </StackPanel>
+</Window>
