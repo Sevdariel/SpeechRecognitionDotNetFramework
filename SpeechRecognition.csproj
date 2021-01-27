@@ -73,6 +73,9 @@
     <Compile Include="Kontrolki\TextBlock.xaml.cs">
       <DependentUpon>TextBlock.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kontrolki\TextBlockInlineSample.xaml.cs">
+      <DependentUpon>TextBlockInlineSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SpeechFileToText\SpeechFileToText.xaml.cs">
       <DependentUpon>SpeechFileToText.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Kontrolki\TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kontrolki\TextBlockInlineSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
