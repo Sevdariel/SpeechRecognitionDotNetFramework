@@ -73,6 +73,9 @@
     <Compile Include="Kontrolki\CheckBoxSample.xaml.cs">
       <DependentUpon>CheckBoxSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kontrolki\ImageControlCodeBehindSample.xaml.cs">
+      <DependentUpon>ImageControlCodeBehindSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kontrolki\ImageControlSample.xaml.cs">
       <DependentUpon>ImageControlSample.xaml</DependentUpon>
     </Compile>
@@ -130,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Kontrolki\CheckBoxSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kontrolki\ImageControlCodeBehindSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
