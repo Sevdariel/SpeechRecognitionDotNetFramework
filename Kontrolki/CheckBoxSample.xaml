@@ -5,26 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpeechRecognition.Kontrolki"
         mc:Ignorable="d"
-        Title="CheckBoxSample" Height="140" Width="250">
+        Title="CheckBoxSample" Height="170" Width="300">
     <StackPanel Margin="10">
         <Label FontWeight="Bold">Application Options</Label>
-        <CheckBox>
-            <TextBlock>
-				Enable feature <Run Foreground="Green" FontWeight="Bold">ABC</Run>
-            </TextBlock>
-        </CheckBox>
-        <CheckBox IsChecked="True">
-            <WrapPanel>
-                <TextBlock>
-					Enable feature <Run FontWeight="Bold">XYZ</Run>
-                </TextBlock>
-                <!--<Image Source="/WpfTutorialSamples;component/Images/question.png" Width="16" Height="16" Margin="5,0" />-->
-            </WrapPanel>
-        </CheckBox>
-        <CheckBox>
-            <TextBlock>
-				Enable feature <Run Foreground="Blue" TextDecorations="Underline" FontWeight="Bold">WWW</Run>
-            </TextBlock>
-        </CheckBox>
+        <StackPanel Margin="10,5">
+            <CheckBox IsThreeState="True" Name="cbAllFeatures" Checked="cbAllFeatures_CheckedChanged" Unchecked="cbAllFeatures_CheckedChanged">Enable all</CheckBox>
+            <StackPanel Margin="20,5">
+                <CheckBox Name="cbFeatureAbc" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">Enable feature ABC</CheckBox>
+                <CheckBox Name="cbFeatureXyz" IsChecked="True" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">Enable feature XYZ</CheckBox>
+                <CheckBox Name="cbFeatureWww" Checked="cbFeature_CheckedChanged" Unchecked="cbFeature_CheckedChanged">Enable feature WWW</CheckBox>
+            </StackPanel>
+        </StackPanel>
     </StackPanel>
 </Window>
