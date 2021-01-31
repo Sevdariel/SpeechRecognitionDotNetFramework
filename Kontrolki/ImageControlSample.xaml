@@ -6,6 +6,6 @@
         mc:Ignorable="d"
         Title="ImageControlSample" Height="450" Width="800">
     <Grid>
-        <Image Source="https://upload.wikimedia.org/wikipedia/commons/3/30/Googlelogo.png" />
+        <Image Source="/SpeechRecognition;component/Images/google.png" />
     </Grid>
 </Window>
