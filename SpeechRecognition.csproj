@@ -76,6 +76,9 @@
     <Compile Include="Kontrolki\LabelControlSample.xaml.cs">
       <DependentUpon>LabelControlSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kontrolki\PasswordBoxSample.xaml.cs">
+      <DependentUpon>PasswordBoxSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kontrolki\RadioButtonSample.xaml.cs">
       <DependentUpon>RadioButtonSample.xaml</DependentUpon>
     </Compile>
@@ -128,6 +131,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Kontrolki\LabelControlSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kontrolki\PasswordBoxSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
