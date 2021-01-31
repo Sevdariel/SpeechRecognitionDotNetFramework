@@ -70,6 +70,9 @@
     <Compile Include="FirstSteps\ResourcesFromCodeBehindSample.xaml.cs">
       <DependentUpon>ResourcesFromCodeBehindSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kontrolki\CheckBoxSample.xaml.cs">
+      <DependentUpon>CheckBoxSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Kontrolki\LabelControlSample.xaml.cs">
       <DependentUpon>LabelControlSample.xaml</DependentUpon>
     </Compile>
@@ -114,6 +117,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FirstSteps\ResourcesFromCodeBehindSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kontrolki\CheckBoxSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
