@@ -4,11 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="RadioButtonSample" Height="150" Width="250">
+        Title="RadioButtonSample" Height="230" Width="250">
     <StackPanel Margin="10">
         <Label FontWeight="Bold">Are you ready?</Label>
-        <RadioButton>Yes</RadioButton>
-        <RadioButton>No</RadioButton>
-        <RadioButton IsChecked="True">Maybe</RadioButton>
+        <RadioButton GroupName="ready">Yes</RadioButton>
+        <RadioButton GroupName="ready">No</RadioButton>
+        <RadioButton GroupName="ready" IsChecked="True">Maybe</RadioButton>
+
+        <Label FontWeight="Bold">Male or female?</Label>
+        <RadioButton GroupName="sex">Male</RadioButton>
+        <RadioButton GroupName="sex">Female</RadioButton>
+        <RadioButton GroupName="sex" IsChecked="True">Not sure</RadioButton>
     </StackPanel>
 </Window>
