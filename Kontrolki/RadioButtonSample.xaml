@@ -4,16 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="RadioButtonSample" Height="230" Width="250">
+        Title="RadioButtonSample" Height="150" Width="250">
     <StackPanel Margin="10">
         <Label FontWeight="Bold">Are you ready?</Label>
-        <RadioButton GroupName="ready">Yes</RadioButton>
-        <RadioButton GroupName="ready">No</RadioButton>
-        <RadioButton GroupName="ready" IsChecked="True">Maybe</RadioButton>
-
-        <Label FontWeight="Bold">Male or female?</Label>
-        <RadioButton GroupName="sex">Male</RadioButton>
-        <RadioButton GroupName="sex">Female</RadioButton>
-        <RadioButton GroupName="sex" IsChecked="True">Not sure</RadioButton>
+        <RadioButton>
+            <WrapPanel>
+                <!--<Image Source="/WpfTutorialSamples;component/Images/accept.png" Width="16" Height="16" Margin="0,0,5,0" />-->
+                <TextBlock Text="Yes" Foreground="Green" />
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Margin="0,5">
+            <WrapPanel>
+                <!--<Image Source="/WpfTutorialSamples;component/Images/cancel.png" Width="16" Height="16" Margin="0,0,5,0" />-->
+                <TextBlock Text="No" Foreground="Red" />
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton IsChecked="True">
+            <WrapPanel>
+                <!--<Image Source="/WpfTutorialSamples;component/Images/question.png" Width="16" Height="16" Margin="0,0,5,0" />-->
+                <TextBlock Text="Maybe" Foreground="Gray" />
+            </WrapPanel>
+        </RadioButton>
     </StackPanel>
 </Window>
